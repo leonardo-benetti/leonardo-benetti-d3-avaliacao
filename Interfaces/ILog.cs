@@ -2,10 +2,13 @@
 
 namespace leonardo_benetti_d3_avaliacao.Interfaces
 {
+    internal enum DbOperation
+    {
+        Login, Logout, Creation, Update, Delete, ListAll
+    }
+
     internal interface ILog
     {
-        void RegisterLogin(User user);
-
-        void RegisterLogout(User user);
+        void RegisterOperation(User user, DbOperation operation);
     }
 }

@@ -6,7 +6,7 @@ namespace leonardo_benetti_d3_avaliacao.Interfaces
     {
         List<User> ReadAll();
 
-        void Create(User user);
+        User Create(User user);
 
         void Update(User user);
 
